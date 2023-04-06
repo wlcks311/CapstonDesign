@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+     .parent{
+        position: relative;
+     }
+     /* .canvas{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+     }    */
+    </style>
 </head>
 <body>
-    <canvas id="canvas"> <!-- 캔버스 태그를 사용해 시각 요소 구성 -->>
+    <div class='parent'>
+        <canvas id='canvas' class="canvas"> <!-- 캔버스 태그를 사용해 시각 요소 구성 -->
 
-    </canvas>
-    <script src="main.js"></script>
+        </canvas><br>
+        <button onclick="openFullScreenMode()">
+            fullScreen
+        </button>
+    </div>
+    
+    
+    <script src="main.js">
+
+    </script>
 </body>
 </html>
